@@ -5,9 +5,10 @@ class Solution:
         for x in s:
             if x == '(':
                 nest += 1
+                max_nest = max(nest, max_nest)
             elif x == ')':
                 nest -= 1
-            max_nest = max(nest, max_nest)
+            
         return max_nest
 
 
