@@ -7,8 +7,7 @@ class Solution:
                 nest += 1
             elif x == ')':
                 nest -= 1
-            if nest > max_nest:
-                max_nest = nest
+            max_nest = max(nest, max_nest)
         return max_nest
 
 
