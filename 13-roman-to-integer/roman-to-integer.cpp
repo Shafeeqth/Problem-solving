@@ -10,10 +10,11 @@ public:
             {'D', 500},
             {'M', 1000}
         };
+        int n =  s.length();
         int i = 0;
         int result = 0;
-        while( i < s.length()) {
-            if(i < s.length() -1 && symbols[s[i]]<symbols[s[i+1]]) {
+        while( i < n) {
+            if(i < n -1 && symbols[s[i]]<symbols[s[i+1]]) {
                 result += symbols[s[i+1]] - symbols[s[i]];
                 i += 2;
             } else {
